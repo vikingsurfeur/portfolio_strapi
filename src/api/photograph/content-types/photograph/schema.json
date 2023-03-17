@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photographs",
+  "info": {
+    "singularName": "photograph",
+    "pluralName": "photographs",
+    "displayName": "Photograph"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "photographedAt": {
+      "type": "date"
+    },
+    "location": {
+      "type": "richtext"
+    },
+    "isLastWorkPortfolio": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isOnSale": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "sellerUrl": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "portfolio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::portfolio.portfolio",
+      "inversedBy": "photographs"
+    }
+  }
+}

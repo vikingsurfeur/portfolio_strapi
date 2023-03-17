@@ -4,7 +4,8 @@
   "info": {
     "singularName": "portfolio",
     "pluralName": "portfolios",
-    "displayName": "Portfolio"
+    "displayName": "Portfolio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,19 +16,30 @@
       "type": "string",
       "required": true
     },
-    "content": {
+    "description": {
       "type": "richtext"
     },
-    "photograph": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
+    "location": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
       "required": true
+    },
+    "socialNetworkUrl": {
+      "type": "string"
+    },
+    "photographs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::photograph.photograph",
+      "mappedBy": "portfolio"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "portfolios"
     }
   }
 }
