@@ -4,7 +4,8 @@
   "info": {
     "singularName": "photograph",
     "pluralName": "photographs",
-    "displayName": "Photograph"
+    "displayName": "Photograph",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,18 +36,25 @@
       "type": "string"
     },
     "file": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "portfolio": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::portfolio.portfolio",
       "inversedBy": "photographs"
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
     }
   }
 }
