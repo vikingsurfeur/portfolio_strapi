@@ -85,6 +85,12 @@
       "relation": "oneToMany",
       "target": "api::portfolio.portfolio",
       "mappedBy": "user"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
     }
   }
 }
