@@ -11,13 +11,14 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.6.1",
-    "@strapi/plugin-users-permissions": "4.6.1",
     "@strapi/plugin-i18n": "4.6.1",
+    "@strapi/plugin-users-permissions": "4.6.1",
+    "@strapi/provider-upload-cloudinary": "^4.9.0",
+    "@strapi/strapi": "4.6.1",
     "mysql": "2.18.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "David Bouscarle"
   },
   "strapi": {
     "uuid": "c76e0613-cf99-48c2-be80-f47b4a954ddf"
