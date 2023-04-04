@@ -52,8 +52,21 @@
     "format": {
       "type": "enumeration",
       "enum": [
+        "r1/1",
+        "r4/5",
+        "r5/7",
+        "r2/3",
+        "r4/3",
+        "r16/9",
+        "r16/10"
+      ]
+    },
+    "orientation": {
+      "type": "enumeration",
+      "enum": [
+        "horizontal",
         "vertical",
-        "horizontal"
+        "square"
       ]
     }
   }
