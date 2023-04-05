@@ -40,6 +40,12 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "portfolios"
+    },
+    "photographCover": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::photograph.photograph",
+      "inversedBy": "portfolioCover"
     }
   }
 }

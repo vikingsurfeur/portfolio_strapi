@@ -68,6 +68,12 @@
         "vertical",
         "square"
       ]
+    },
+    "portfolioCover": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::portfolio.portfolio",
+      "mappedBy": "photographCover"
     }
   }
 }
