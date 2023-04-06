@@ -74,6 +74,10 @@
       "relation": "oneToOne",
       "target": "api::portfolio.portfolio",
       "mappedBy": "photographCover"
+    },
+    "altDescription": {
+      "type": "string",
+      "required": true
     }
   }
 }
