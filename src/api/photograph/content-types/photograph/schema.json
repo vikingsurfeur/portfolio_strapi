@@ -61,12 +61,6 @@
         "r16/10"
       ],
       "required": true
-    },
-    "portfolioCover": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::portfolio.portfolio",
-      "mappedBy": "photographCover"
     }
   }
 }

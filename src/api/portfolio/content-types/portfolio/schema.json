@@ -42,10 +42,12 @@
       "inversedBy": "portfolios"
     },
     "photographCover": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::photograph.photograph",
-      "inversedBy": "portfolioCover"
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
