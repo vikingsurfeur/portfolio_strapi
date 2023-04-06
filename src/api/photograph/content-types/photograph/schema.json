@@ -59,25 +59,14 @@
         "r4/3",
         "r16/9",
         "r16/10"
-      ]
-    },
-    "orientation": {
-      "type": "enumeration",
-      "enum": [
-        "horizontal",
-        "vertical",
-        "square"
-      ]
+      ],
+      "required": true
     },
     "portfolioCover": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::portfolio.portfolio",
       "mappedBy": "photographCover"
-    },
-    "altDescription": {
-      "type": "string",
-      "required": true
     }
   }
 }
