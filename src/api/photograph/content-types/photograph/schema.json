@@ -49,7 +49,7 @@
       "target": "api::portfolio.portfolio",
       "inversedBy": "photographs"
     },
-    "format": {
+    "ratio": {
       "type": "enumeration",
       "enum": [
         "r1/1",
@@ -61,6 +61,12 @@
         "r16/10"
       ],
       "required": true
+    },
+    "portfolioCover": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::portfolio.portfolio",
+      "inversedBy": "photographCover"
     }
   }
 }
